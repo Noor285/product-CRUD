@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <h1 class="text-center mt-5">Product CRUD</h1>
+
+    <div class="container bg-light p-5">
+        <div class="form-inputs">
+            <div class="input-gp mb-3">
+                <label>Product Name</label>
+                <input id='productName' type="text" class="form-control mb-3">
+                <div id="nameAlert" class="alert alert-danger d-none">name should be start with capital</div>
+            </div>           
+             <div class="input-gp mb-3">
+                <label>Product Price</label>
+                <input id='productPrice' type="text" class="form-control">
+            </div>          
+            <div class="input-gp mb-3">
+                <label>Product Category</label>
+                <input id='productCategory' type="text" class="form-control">
+            </div>         
+            <div class="input-gp mb-3">
+                <label>Product Description</label>
+                <textarea id='productDesc' type="text" class="form-control"></textarea>
+            </div>
+
+            <button id='submitBtn' class="btn btn-primary">Add Product</button>
+
+        </div>
+
+        <div class="data mt-5">
+            <input id='search' class="form-control mb-5 w-50 m-auto" placeholder="search by name">
+            <table class="table table-striped">
+                <thead>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
